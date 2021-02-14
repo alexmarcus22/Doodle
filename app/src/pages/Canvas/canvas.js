@@ -104,7 +104,7 @@ export function CanvasPage() {
   return (
     <div>
       <section className="home-component">
-        <div className="hero-component d-flex justify-content-center align-items-center w-100">
+        <div className="hero-component d-flex justify-content-center align-items-center w-100 flex-row">
           <div className="options-component">
             <div className="form-group">
               <button className="btn btn-primary" onClick={saveImage}>
