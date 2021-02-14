@@ -12,7 +12,13 @@ export class Header extends Component {
   render() {
     return (
       <Router>
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="header-component">
+        <Navbar
+          collapseOnSelect
+          expand="lg"
+          bg="dark"
+          variant="dark"
+          className="header-component"
+        >
           <Navbar.Brand href="#home">
             <Logo
               alt=""
@@ -24,7 +30,7 @@ export class Header extends Component {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="mr-auto">
+            {/* <Nav className="mr-auto">
               <Nav.Link href="#features">Features</Nav.Link>
               <Nav.Link href="#pricing">Pricing</Nav.Link>
               <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
@@ -40,6 +46,10 @@ export class Header extends Component {
                   Separated link
                 </NavDropdown.Item>
               </NavDropdown>
+            </Nav> */}
+            <Nav className="ml-auto">
+              <Nav.Link href="/register">Register</Nav.Link>
+              <Nav.Link href="/login">Login</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>

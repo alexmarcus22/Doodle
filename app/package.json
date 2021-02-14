@@ -9,12 +9,14 @@
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "input-knob": "^0.0.11",
     "mongoose": "^5.11.15",
     "node-sass": "^5.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.2",
+    "vanilla-picker": "^2.11.2",
     "web-vitals": "^1.1.0"
   },
   "scripts": {
@@ -43,6 +45,9 @@
   },
   "devDependencies": {
     "concurrently": "^5.3.0",
+    "knob": "^1.1.0",
+    "rc-knob": "^1.0.1",
     "react-bootstrap": "^1.4.3"
-  }
+  },
+  "proxy": "http://localhost:5000"
 }
