@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import './sass/global.scss';
-import { Home } from './components/Home/index'
 import { Header } from './shared/Header/index'
+import { Home } from './components/Home/index'
 
 function App() {
   return (
