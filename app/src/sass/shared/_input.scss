@@ -1,0 +1,26 @@
+input-knob {
+  width: 10rem;
+  height: 10rem;
+  margin: auto;
+  display: block;
+  border-radius: 100%;
+  box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.5);
+  background: #cadbbc;
+
+  &::part(rotator) {
+    box-sizing: border-box;
+    width: 10rem;
+    height: 10rem;
+    background: #cadbbc;
+    border-radius: 100%;
+  }
+
+  .mark {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font: bold 200% monospace;
+    color: black;
+    background-color: transparent;
+  }
+}

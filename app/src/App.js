@@ -1,16 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-import './sass/global.scss';
-import { Home } from './components/Home/index'
-import { Header } from './shared/Header/index'
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import "./sass/global.scss";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Home } from "./pages/Home/home";
+import { Canvas } from "./components/Canvas/canvas";
+import { NotFound } from "./shared/Error/NotFound";
 
-function App() {
+export default function App() {
   return (
-    <div>
-      <Header/>
-      <Home/>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/canvas" exact component={Canvas} />
+        <Route path="*">
+          <NotFound />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
-
-export default App;
